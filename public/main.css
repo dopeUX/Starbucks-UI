@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;600;700&family=Poppins:wght@400;500;600;700;800&display=swap");
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo .logoText {
+  font-family: 'Big Shoulders Text';
+  font-size: 1.9em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: .8em;
+}
+
+.logo .imgLogo {
+  width: 70px;
+  height: 70px;
+  margin-left: 2em;
+}
+
+.navBar {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: .85em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.navBar ul .selectedIndex {
+  font-weight: bold;
+}
+
+.navBar ul li {
+  margin-right: 2em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.right-col {
+  position: absolute;
+  right: 6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-col .search {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin-right: .6em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.right-col .search .search-input {
+  width: 200px;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid gray;
+  padding-left: 1em;
+  border-radius: .5em;
+}
+
+.dashboard-page {
+  width: 96%;
+  z-index: -4;
+  overflow: hidden;
+  margin: 1em auto;
+  background: #f8efe6;
+  height: 650px;
+  text-align: center;
+  border-radius: 1.5em;
+}
+
+.dashboard-page .logo-big {
+  height: 650px;
+  z-index: 1;
+  float: right;
+  margin-right: -18em;
+  background-size: contain;
+  background-position: center;
+}
+
+.all-coffees-section {
+  position: absolute;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  margin: 2em 0 0 auto;
+  z-index: 999;
+  right: 6em;
+}
+
+.all-coffees-section .coffee-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.all-coffees-section .coffee-div .coffee {
+  display: block;
+  z-index: 8;
+  width: 200px;
+  cursor: pointer;
+  height: 200px;
+}
+
+.all-coffees-section .coffee-div p {
+  position: absolute;
+  bottom: .2em;
+  right: 1.7em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: .4em .9em;
+  border-radius: .3em;
+  z-index: 11;
+  font-weight: 700;
+  -webkit-box-shadow: 0 0 30px 5px rgba(49, 49, 49, 0.8);
+          box-shadow: 0 0 30px 5px rgba(49, 49, 49, 0.8);
+  background-color: white;
+  color: black;
+}
+
+.coffee-details {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coffee-details .left-col {
+  margin: 1em 0 0 4em;
+  text-align: left;
+  display: block;
+}
+
+.coffee-details .left-col h1 {
+  font-size: 2.2em;
+  margin-bottom: 0;
+}
+
+.coffee-details .left-col .ratingandprice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.5em;
+}
+
+.coffee-details .left-col .ratingandprice h2 {
+  margin: -.13em 0 0 1em;
+  color: green;
+}
+
+.coffee-details .left-col p {
+  font-size: .8rem;
+  margin-top: 1.5em;
+}
+
+.coffee-details .left-col h3 {
+  margin-top: 1.5em;
+  font-weight: 600;
+}
+
+.coffee-details .left-col .quantity-and-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin-top: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.coffee-details .left-col .quantity-and-cart .quantity-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: auto;
+  vertical-align: middle;
+  margin-top: 2em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0;
+  overflow: hidden;
+  background: white;
+  border-radius: .6em;
+  -webkit-box-shadow: 0 0 10px 1px #a0a0a0;
+          box-shadow: 0 0 10px 1px #a0a0a0;
+}
+
+.coffee-details .left-col .quantity-and-cart .quantity-button .quantity {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  font-size: .9em;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  background: white;
+  padding: .2em 1.5em;
+}
+
+.coffee-details .left-col .quantity-and-cart .quantity-button p {
+  margin: 1.5em 2em;
+  padding: 0;
+  font-size: .8em;
+  font-weight: bold;
+}
+
+.coffee-details .left-col .quantity-and-cart .add-to-cart-btn {
+  font-family: 'poppins';
+  padding: 1.5em 2em;
+  margin: 2.3em 0 0 2em;
+  border: none;
+  background-color: #0a8f6f;
+  border-radius: .7em;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.coffee-details .right-col {
+  position: relative;
+  right: -5em;
+}
+
+.coffee-details .right-col img {
+  height: 90%;
+  margin: auto;
+}
+
+.serve-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+}
+
+.serve-icons .serve-icon-temp {
+  display: block;
+  margin: .3em 3em 0 0;
+  padding: 0;
+}
+
+.serve-icons .serve-icon-temp img {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+
+.serve-icons .serve-icon-temp p {
+  margin: .5em auto 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 700;
+}
+/*# sourceMappingURL=main.css.map */
