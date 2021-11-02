@@ -1,8 +1,5 @@
 import React, { useState }  from 'react';
 import ReactStarsRating from 'react-awesome-stars-rating';
-import Notifications from './Notifications';
-
-import ReactNotification from 'react-notifications-component';
 import 'react-notifications-component/dist/theme.css';
 import { store } from 'react-notifications-component';
 
