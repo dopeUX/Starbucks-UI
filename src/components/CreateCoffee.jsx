@@ -18,13 +18,7 @@ function AllCoffees(props){
   return (
      <section className="all-coffees-section">
      { ListOfCoffees.map((ListOfCoffee, index) => {
-            {/* return <div className="coffee-div">
-            <img className="coffee" alt="" src={ListOfCoffee.image} 
-            onClick={()=>{props.onChange(index)}}>
-            </img> 
-            <p>{ListOfCoffee.rating}</p>
-            
-            </div>;  */}
+      
             return <CreateCoffee
             image = {ListOfCoffee.image}
             rating = {ListOfCoffee.rating}
