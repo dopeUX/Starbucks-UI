@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react/cjs/react.development';
+import React, { useState }  from 'react';
 import ReactStarsRating from 'react-awesome-stars-rating';
 import Notifications from './Notifications';
 
