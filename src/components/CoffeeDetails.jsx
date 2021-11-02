@@ -34,21 +34,6 @@ function CoffeeDetails(props){
     <div className="left-col">
       <h1>{props.coffeeName}</h1>
       <div className="ratingandprice" >
-          {/* <ReactStars
-          style={{width:"fit-content", height:"fit-content"}}
-          count={5}
-          size={24}
-          value={props.rating}
-          edit={false}
-          isHalf={true}>
-          </ReactStars> */}
-          {/* <RatingView
-          style={{width:"fit-content", height:"fit-content"}}
-          stars={5}
-          ratingValue={props.rating}
-          transition={false}
-          >
-          </RatingView> */}
           <ReactStarsRating
           style={{width:"fit-content", height:"fit-content",
            marginTop:"2em"}}
@@ -65,15 +50,15 @@ function CoffeeDetails(props){
       <h3>Serve with</h3>
       <div className="serve-icons">
         <div className="serve-icon-temp">
-        <img src="./images/donut.png"></img>
+        <img src="./images/donut.png" alt=""></img>
         <p>Donut</p>
         </div>
         <div className="serve-icon-temp">
-        <img src="./images/yogurt.png"></img>
+        <img src="./images/yogurt.png" alt=""></img>
         <p>Yogurt</p>
         </div>
         <div className="serve-icon-temp">
-        <img src="./images/cookie.png"></img>
+        <img src="./images/cookie.png" alt=""></img>
         <p>Cookies</p>
         </div>
 
@@ -92,7 +77,7 @@ function CoffeeDetails(props){
     </div>
 
     <div className="right-col">
-        <img src={props.coffeeImage}></img>
+        <img src={props.coffeeImage} alt=""></img>
     </div>
 
 
