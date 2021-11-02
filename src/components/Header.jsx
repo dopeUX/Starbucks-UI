@@ -1,5 +1,4 @@
 import React from 'react';
-import { Component } from 'react';
 import Navbar from './Navbar';
 import { FiSearch } from "react-icons/fi";
 import {  BiCart } from "react-icons/bi";
@@ -33,8 +32,8 @@ function Header(){
     <div className="header">
      
      <div className="logo">
-     <img src="./images/starbuckslogo.png" className="imgLogo"></img>
-     <h1 className="logoText" onClick={console.log('heyyyy')}>Starbucks</h1>
+     <img src="./images/starbuckslogo.png" alt="" className="imgLogo"></img>
+     <h1 className="logoText">Starbucks</h1>
      </div>
 
      <section className="navBar">
