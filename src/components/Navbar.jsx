@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react/cjs/react.development';
+import React, { useState } from 'react';
 
 const navBarItems=[
            "Home",
@@ -24,7 +23,7 @@ const activeItem=[
 
 function Navbar(){
 
-   const [currentIndex, setCurrentIndex] = useState(0);
+   const [currentIndex, setcurrentIndex] = useState(0);
   
    return (
        <ul>
@@ -32,7 +31,7 @@ function Navbar(){
             navBarItems.map((navBarItem, index)=>{
             return <li className={activeItem[index]===true? "selectedIndex": null}
              onClick={(e)=>{
-              setCurrentIndex(index)
+              setcurrentIndex(index)
               activeItem.fill(false)
               activeItem[index]=true;
               console.log(index);
